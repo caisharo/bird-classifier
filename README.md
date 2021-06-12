@@ -18,7 +18,6 @@ A video summary can be found [here](#).
 * Tested mostly independently on our own Google accounts to save computation time while sharing some changes that seemed to work (not the most "scientific" but we were on a bit of a time crunch)
   * Ideally should have tested changes one at a time, but usually ended up not because we were a bit limited on time
 * Tested with both ResNet-18 and ResNet-50 
-  * Both uploaded to GitHub here, but can also be found on Google Colab [here](https://colab.research.google.com/drive/1CMa1lWuyWFY6dw5YfLqPBt1nNpgLmdLr?usp=sharing) for the ResNet-18 version and [here](https://colab.research.google.com/drive/1y-TL3s2taJT9W0ltq3tDlx2-svQA0vGY?usp=sharing) for the ResNet-50 version.
   * Upon some research, we learned ResNet-50 has better accuracy without the worst computation time trade-off
     * Had to reduce batch size to fit on Colab GPU
   * Did a bit more experimenting with ResNet-18 as it was faster
