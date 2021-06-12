@@ -41,7 +41,7 @@ A video summary can be found [here](#).
     * Model likely overfitted to training set
 * Probably could have tuned our parameters a bit more with testing to fix overfitting, but it was kind of painfully slow (especially with ResNet-50) and we had limited time
   * Could have tried to add more data augmentation to reduce overfitting (e.g. RandomResizedCrop or RandomErasing)
-* Graphs of loss can be seen in ipynb files on GitHub
+* Graphs of loss can be seen in Jupyter Notebook (.ipynb) files on GitHub
 
 ## Conclusion
 * We learned how to use Colab and PyTorch to train a bird classifier
