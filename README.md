@@ -25,8 +25,9 @@ A video summary can be found [here](#).
   * Increased image size from 128 to 256 - higher resolution should help pick out details
   * Normalized input images according to [documentation](https://pytorch.org/vision/stable/models.html)
     * Normalized input seemed to to work fine with ResNet-18, but not with ResNet-50 (or we made some sort of mistake along with it, but removing that part seemed to make it significantly better - went from 32% to 81% on Kaggle???)
-  * Increased epochs (with a lower learning rate later)
-    * More time for the network to learn, preferably change learning rate when the loss plateaus
+  * Adjusted epochs (with a lower learning rate later)
+    * More epochs gives more time for the network to learn - but not always better
+    * Preferably change learning rate when the loss plateaus
 * Didn't make a validation set at first - submitting to Kaggle somewhat blindly 
   * Did figure out a way to do validation testing, but didn't end up being used in our final submitted version as we didn't want to re-train everything on ResNet-50 (and we were satisfied enough with our Kaggle results)
   * Used Linux commands to select 3 random files from each numbered subfolder (type of bird) in the training folder, moving them to a corresponding subfolder in the validation folder, and then retraining (so none of the validation images would get mixed up with the training set)
@@ -34,12 +35,13 @@ A video summary can be found [here](#).
 
 ## Results
 * Highest score of 0.81400 on Kaggle
-  * One of our ResNet-50 versions   
+  * One of our ResNet-50 versions
+    * Resnet-50 version that used 7 epochs performed better than version using 12 (0.81400 vs 0.77000 on Kaggle); 7 epochs also resulted in lower final loss - around 0.3 vs around 0.5  
   * Had higher training accuracy (94%), but worse test accuracy on Kaggle
     * Model likely overfitted to training set
 * Probably could have tuned our parameters a bit more with testing to fix overfitting, but it was kind of painfully slow (especially with ResNet-50) and we had limited time
   * Could have tried to add more data augmentation to reduce overfitting (e.g. RandomResizedCrop or RandomErasing)
-* Charts/graphs here?
+* Graphs of loss can be seen in ipynb files on GitHub
 
 ## Conclusion
 * We learned how to use Colab and PyTorch to train a bird classifier
