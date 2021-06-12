@@ -1,7 +1,7 @@
 # Bird Classifier
 Bird classifier for a [Kaggle competition](https://www.kaggle.com/c/birds21sp/) as a final project for our CSE 455: Computer Vision class.
 <br />
-A video summary can be found [here](#).
+A video summary can be found [here](https://drive.google.com/file/d/1eQZ0MslY_HcrPwS1lhr14FeecjUv06d9/view?usp=sharing).
 
 ## Introduction
 * What are birds? Which bird is it? The goal of this challenge is to classify images of birds. The Kaggle data set we used has a total of 555 different image categories (birds), and the final test set has 10,000 images.
